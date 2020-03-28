@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  database:
+    image: phuctranlv/abode-homevalue-module-deploy_database
+    restart: always
+
+  homevalue:
+    image: phuctranlv/abode-homevalue-module-deploy_homevalue
+    depends_on:
+      - 'database'
+    command: ["/wait-for-it.sh", "database:3306", "--", "npm", "start"]
+    restart: always
+    ports:
+      - '3333:3333'
