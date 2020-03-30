@@ -1,0 +1,56 @@
+.comparableHomeModel {
+  background-color: rgb(255, 255, 255);
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.comparableHomeModelTitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.iconWithSpace {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.comparableHomeModelExplaination {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 8px;
+}
+
+.comparableHomeModelValue {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.comparableHomeModelEntries {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 16px;
+  grid-template-columns: auto auto;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.showMore {
+  display: block;
+  margin: 16px 16px 0px 0px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #006aff;
+}
